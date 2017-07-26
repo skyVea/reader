@@ -1,4 +1,4 @@
-package vo;
+package com.reader.vo;
 
 public class Chapter {
 	private String content;

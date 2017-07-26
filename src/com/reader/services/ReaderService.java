@@ -1,11 +1,11 @@
-package services;
+package com.reader.services;
 
 import java.io.ObjectInputStream.GetField;
 import java.util.Collection;
 
-import vo.Book;
-import vo.Catagory;
-import vo.Chapter;
+import com.reader.vo.Book;
+import com.reader.vo.Catagory;
+import com.reader.vo.Chapter;
 
 
 public interface ReaderService {
