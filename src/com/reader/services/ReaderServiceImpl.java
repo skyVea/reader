@@ -2,7 +2,6 @@ package com.reader.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
 
 import com.reader.vo.Book;
 import com.reader.vo.Catagory;
@@ -13,11 +12,15 @@ public class ReaderServiceImpl implements ReaderService{
 	@Override
 	public Collection<Catagory> getCatagory() {
 		// TODO Auto-generated method stub
-		Collection<Catagory> collection = new <Catagory>ArrayList();
+		Collection list = new ArrayList();
+		
 		for (int i = 0; i < 3; i++) {
-			
+			Catagory catagory = new Catagory();
+			catagory.setCatagoryId(String.valueOf(i));
+			catagory.setCatagoryDescription("类型"+i);
+			list.add(catagory);
 		}
-		return null;
+		return list;
 	}
 
 	@Override

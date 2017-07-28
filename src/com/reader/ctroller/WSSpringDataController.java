@@ -2,6 +2,8 @@ package com.reader.ctroller;
 
 import java.util.Collection;
 
+import javax.ws.rs.core.Response;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,7 +13,7 @@ import com.reader.util.JsonUtils;
 import com.reader.vo.Catagory;
 
 @Controller
-public class DataController extends BaseServlet{
+public class WSSpringDataController {
 	/**
 	 * 
 	 */
